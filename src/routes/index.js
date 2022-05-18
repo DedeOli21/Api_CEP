@@ -57,10 +57,6 @@ router.use((req, res, next) => {
   }
 })
 
-router.get('/', (req, res) => {
-  res.send('Server Running!!!')
-})
-
 router.post('/cep', async (req, res) => {
   try {
     const {
@@ -74,7 +70,7 @@ router.post('/cep', async (req, res) => {
     }
 
     const address = await CepController.search(cep)
-    res.json(address)
+    res.send(address)
   } catch (error) {
     res.status(500).json({
       error: error.message
