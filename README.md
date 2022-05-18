@@ -53,8 +53,10 @@ TESTES :
 
   retorno: 
   {
-    {"cep":"37200-900","logradouro":"Rua Doutor Baker","complemento":"s/n","bairro":"Ignácio
-    Valentin","localidade":"Lavras","uf":"MG","ibge":"3138203","gia":"","ddd":"35","siafi":"4763"}
+    {"cep":"37200-900","logradouro":"Rua Doutor Baker",
+    "complemento":"s/n","bairro":"Ignácio Valentin", 
+    "localidade":"Lavras","uf":"MG" 
+    "ibge":"3138203","gia":"","ddd":"35","siafi":"4763"}
   }
 ```
 ```
@@ -62,6 +64,7 @@ O projeto foi realizado com JWT para autenticação.
 Redis para guardar as informações assim evitando outra requisição.
 Docker para gerenciar as versões do redis.
 
+```
 ## 🤝 Desenvolvedor
 
 <table>
